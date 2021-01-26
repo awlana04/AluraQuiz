@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 
 import db from '../db.json';
@@ -23,7 +24,12 @@ const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>AluraQuiz - CSS</title>
+      </Head>
       <QuizContainer>
+        <QuizLogo /> 
+
         <Widget>
           <Widget.Header>
             <h1>Quiz CSS da Alura</h1>

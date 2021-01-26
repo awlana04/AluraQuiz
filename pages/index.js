@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styled from 'styled-components';
 
 import db from '../db.json';
@@ -22,6 +23,10 @@ const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -36,9 +41,23 @@ export default function Home() {
           </Widget.Header>
           
           <Widget.Content>
-            <p>
-              Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar
-            </p>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input 
+                onChange={function (event) {
+                  setName(event.target.value);
+                }}
+                placeholder="Revele seu nome para jogar :>" 
+              />
+
+              <button type="submit" disabled={name.length === 0}>
+                Bora estilizar {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 

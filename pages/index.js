@@ -4,11 +4,12 @@ import styled from 'styled-components';
 
 import db from '../db.json';
 
-import Widget from '../src/components/Widget';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
+import Widget from '../src/components/Widget';
+import Input from '../src/components/Input';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -32,6 +33,7 @@ export default function Home() {
       <Head>
         <title>AluraQuiz - CSS</title>
       </Head>
+
       <QuizContainer>
         <QuizLogo /> 
 
@@ -41,16 +43,14 @@ export default function Home() {
           </Widget.Header>
           
           <Widget.Content>
-            <form onSubmit={function (event) {
+            <form onSubmit={(event) => {
               event.preventDefault();
 
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input 
-                onChange={function (event) {
-                  setName(event.target.value);
-                }}
+              <Input 
+                onChange={(event) => setName(event.target.value)}
                 placeholder="Revele seu nome para jogar :>" 
               />
 

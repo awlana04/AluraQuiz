@@ -76,14 +76,16 @@ function QuestionWidget({
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
+            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+            const isSelected = selectedAlternative === alternativeIndex;
             
             return (
               <Widget.Topic 
                 as="label" 
                 htmlFor={alternativeId} 
                 key={alternativeId}
-                data-selected={true}
-                data-status={"SUCCESS"}
+                data-selected={isSelected}
+                data-status={isQuestionSubmited && alternativeStatus}
               >
                 <input 
                   type="radio" 

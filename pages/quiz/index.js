@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Lottie } from '@crello/react-lottie';
 
 import db from '../../db.json';
 
@@ -11,6 +12,8 @@ import Widget from '../../src/components/Widget';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 import Button from '../../src/components/Button';
 
+import loadingAnimation from '../../src/screens/Quiz/animations/loading.json';
+
 function LoadingWidget() {
   return (
     <Widget>
@@ -18,8 +21,13 @@ function LoadingWidget() {
         Carregando...
       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -107,8 +115,8 @@ function QuestionWidget({
             Confirmar
           </Button>
 
-          {isQuestionSubmited && isCorrect && <p>Não é que o bicho é brabo!? Acertou muleke!</p>}
-          {isQuestionSubmited && !isCorrect && <p>IIIII, dá zero pra ele.</p>}
+          {isQuestionSubmited && isCorrect && <p>Você sobreviveu mais um dia, mas não significa que sobreviverá para muitos outros...</p>}
+          {isQuestionSubmited && !isCorrect && <p>Foi bom lhe conhecer enquato durou.</p>}
         </AlternativeForms>
       </Widget.Content>
     </Widget>
@@ -119,7 +127,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Tela de resultsado:
+        Tela de resultado:
       </Widget.Header>
 
       <Widget.Content>
@@ -138,13 +146,13 @@ function ResultWidget({ results }) {
             <li key={`result__${result}`}>
               #
               {index + 1} 
-              
+              {' '}
               Resultado: 
               {' '}
 
               {result === true 
-                ? 'Acertou malandro!' 
-                : 'Errou!'
+                ? 'É visto que você não morrerá neste mundo apocalíptico tão cedo.'
+                : 'Seu fim está próximo...'
               }
             </li>
           ))}

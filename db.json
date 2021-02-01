@@ -1,7 +1,7 @@
 {
   "bg": "https://images8.alphacoders.com/532/532407.jpg",
   "title": "Quiz do The Last of Us",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Teste os seu amor por The Last of Us, além de tirar a prova o quanto de dias você sobreviveria em um mundi apocalíptico. Uma dica... não esqueça do Último dos Recursos.",
   "questions": [
     {
       "image": "https://media.giphy.com/media/JRsje1d3xNxCYkLSF2/giphy.gif",
@@ -13,18 +13,6 @@
         "Ela procurava por sua mãe e pediu ajuda para o Joel",
         "Joel está com ela desde que ela nasceu",
         "A Marlene pede para que Joel leve Ellie para o hospital"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/MEXNZckOOdCyGHwNrf/giphy.gif",
-      "title": "Qual a sequência de estágio da infecção?",
-      "description": "Em um mundo apocalíptico, você deve saber quais serão as suas transformações para elaborar a melhor estratégia para comer alguém.",
-      "answer": 2,
-      "alternatives": [
-         "Corredores, Estaladores, Perseguidores e Vermes",
-         "Perseguidores, Corredores, Estaladores e Vermes",
-         "Corredores, Perseguidores, Estaladores e Vermes",
-         "Estaladores, Corredores, Perseguidores e Vermes"
       ]
     },
     {
@@ -40,6 +28,30 @@
       ]
     },
     {
+      "image": "https://media.giphy.com/media/MEXNZckOOdCyGHwNrf/giphy.gif",
+      "title": "Qual a sequência de estágio da infecção?",
+      "description": "Em um mundo apocalíptico, você deve saber quais serão as suas transformações para elaborar a melhor estratégia para comer alguém.",
+      "answer": 2,
+      "alternatives": [
+         "Corredores, Estaladores, Perseguidores e Vermes",
+         "Perseguidores, Corredores, Estaladores e Vermes",
+         "Corredores, Perseguidores, Estaladores e Vermes",
+         "Estaladores, Corredores, Perseguidores e Vermes"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/f5XAY0IrNP6owhNu8s/giphy.gif",
+      "title": "Em qual momento do jogo Joel e Tess descobrem que Ellie está infectada?",
+      "description": "Sei lá não é resposta!!!",
+      "answer": 2,
+      "alternatives": [
+        "Quando Tess vê Ellie se trocando e percebe a mordida em seu braço",
+        "Em uma conversa que os três tem dentro de um carro em direção ao Congresso",
+        "Quando eles são pegos por guardas, e um desses guardas usa um equipamento que detecta infecções",
+        "Sei lá!"
+      ]
+    },
+    {
       "image": "https://media.giphy.com/media/H1epsBEC8Mm8tH5iZq/giphy.gif",
       "title": "Qual a idade de Ellie no final do jogo?",
       "description": "Ela não deve ser tão velha quanto você...",
@@ -52,24 +64,12 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/f5XAY0IrNP6owhNu8s/giphy.gif",
-      "title": "Em qual momento do jogo Joel e Tess descobre que Ellie está infectada?",
-      "description": "Sei lá não é resposta!!!",
-      "answer": 2,
-      "alternatives": [
-        "Quando Tess vê Ellie se trocando e percebe a moridada em seu braço",
-        "Em uma conversa que os três tem dentro de um carro em direção ao Congresso",
-        "Quando eles são pegos por guardas, e um desses guardas usa um equipamento que detecta infecções",
-        "Sei lá!"
-      ]
-    },
-    {
       "image": "https://media.giphy.com/media/Ypk5xmhJrRrP1PM525/giphy.gif",
       "title": "Quando Joel se fere, Ellie vai caçar e acaba conhecendo o David, no qual...?",
       "description": "Segura o ranço amiga",
       "answer": 3,
       "alternatives": [
-        "Ele ajuda Ellie, leva o Joel para sua case e o dá remédios",
+        "Ele ajuda Ellie, leva o Joel para sua casa e o dá remédios",
         "Ele fingi ajudar ela só para encontrar o Joel e roubar suas armas",
         "Ellie descobre que David estava infectado e quando ele começa a se transformar, Ellie o mata",
         "Ranço finge ajudar ela, mas somente com a intenção de sequestra-la, já que ele e seu grupo eram canibais"
@@ -78,7 +78,7 @@
     {
       "image": "https://media.giphy.com/media/dleChZnJkpoDm/giphy.gif",
       "title": "Em The Last of Us: Left Behind, a amiga de Ellie, Riley, volta, mas... onde ela estava?",
-      "description": "Desculpa pela grande aunsência de criatividade",
+      "description": "Desculpa pela grande ausência de criatividade",
       "answer": 2,
       "alternatives": [
         "Ela foi obrigada ir a um treinamento militar",

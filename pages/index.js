@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>AluraQuiz - CSS</title>
+        <title>AluraQuiz - The Last of Us</title>
       </Head>
 
       <QuizContainer>
@@ -45,7 +45,7 @@ export default function Home() {
           animate="show"
         >
           <Widget.Header>
-            <h1>Quiz CSS da Alura</h1>
+            <h1>Quiz The Last of Us da Alura</h1>
           </Widget.Header>
           
           <Widget.Content>
@@ -63,7 +63,7 @@ export default function Home() {
               />
 
               <Button type="submit" disabled={name.length === 0}>
-                Bora estilizar {name}
+                Bora sobreviver {name}
               </Button>
             </form>
           </Widget.Content>
@@ -83,7 +83,7 @@ export default function Home() {
           animate="show"
         >
           <Widget.Content>
-            <h1>Quizes da galera</h1>
+            <h1>Quizes dos sobreviventes</h1>
 
             <ul>
               {db.external.map((externalLink) => {

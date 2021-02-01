@@ -21,7 +21,7 @@
 
 ## About
 
-The **AluraQuiz** it's a project developed during the week **#ImersãoReact** promoved by Alura, where it aimed to create a quiz with the theme you such like, making use of the atual technologies like **ReactJS**, **Next.JS** and **Styled-components**.
+The **AluraQuiz** it's a project developed during the week **#ImersãoReact** promoted by Alura, where it aimed to create a quiz with the theme you such like, making use of the atual technologies like **ReactJS**, **Next.JS** and **Styled-components**.
 
 The theme that I chose to make my quiz were the game developed by Naughty Dog, **The Last of Us**, which is one of my favorite games.
 
